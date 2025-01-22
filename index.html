@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Data Generator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    
+    <div id="start-screen">
+      <h1>Welcome to Random Data Generator Game</h1>
+      <button id="start-btn">Start Game</button>
+    </div>
+
+    <div id="main-content" style="display: none;">
+      <h1>WELCOME TO RANDOM DATA GENERATOR </h1>
+
+      <h2>Select a Dog Name</h2>
+      <select id="dog-selector">
+        <option value="">Select a dog</option>
+        <option value="Buddy">Buddy</option>
+        <option value="Max">Max</option>
+        <option value="Bella">Bella</option>
+        <option value="Charlie">Charlie</option>
+        <option value="Luna">Luna</option>
+        <option value="Cooper">Cooper</option>
+        <option value="Daisy">Daisy</option>
+        <option value="Rocky">Rocky</option>
+        <option value="Molly">Molly</option>
+        <option value="Bailey">Bailey</option>
+        <option value="Sadie">Sadie</option>
+        <option value="Lucy">Lucy</option>
+      </select>
+      <button id="btn" disabled>Generate Data</button>
+
+      <h2>Joke</h2>
+      <div id="jokecontent">A random joke setup will appear here</div>
+      <div id="joke">The punchline will appear here</div>
+
+      <h2>Dog Image</h2>
+      <img id="image" src="dog.jpg" alt="Random Dog" />
+
+      <h2>Random User</h2>
+      <div id="user-details">
+        <p id="user-name">Name: </p>
+        <p id="user-email">Email: </p>
+        <img id="user-pic" src="user.jpg" alt="User Picture" />
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
